@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(254, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home{
+    font-family: ColfaxAI,Helvetica,sans-serif;
+    border-width: 4px;
+    border-color: black;
+    height: 1000px;
+}
+
+.About{
+    padding-top: 10%;
+    display: flex;
+    display: inline-block;
+    margin: 10;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: rgb(255, 151, 53);
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: left;
+}
+
+.App {
+    font-family: JetBrains Mono, monospace;
+    text-align: center;
+}
+  
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.wrapper{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+    margin-top: 30px;
+ 
+}
+ul {
+    width: 900px;
+    display: flex;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+  
+li {
+    background-color: rgba(252, 163, 61, 0.801);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+li:last-child {
+    margin-bottom: 0px;
+  }
+  
+.avatar1 {
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 20px;
+  }
+
+.row {
+    width: 100%;
+    height: 8px;
+    
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+  
