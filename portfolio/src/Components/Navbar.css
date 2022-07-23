@@ -1,14 +1,67 @@
-.navbar {
-    background: rgb(255, 255, 255);
-    height: 80px;
-    display: flex;
+
+  @font-face {
+    font-family: 'space_monoregular';
+    src: url('../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ITC Avant Garde Gothic Std 5';
+    src: url('../Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+        url('../Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'karlaregular';
+    src: url('../Fonts/karlawght-webfont.woff2') format('woff2'),
+         url('../Fonts/karlawght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'space_monobold';
+    src: url('../Fonts/spacemono-bold-webfont.woff2') format('woff2'),
+         url('../Fonts/spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ITC Lubalin Graph Std';
+    src: url('../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+        url('../Fonts/LubalinGraphStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Lubalin Graph Std 2';
+    src: url('../Fonts/LubalinGraphStd-Demi.woff2') format('woff2'),
+        url('../Fonts/LubalinGraphStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+  .navbar {
+    background: rgb(241,191,1);
+    height: 10vh;
+    display: grid;
     justify-content: center;
-    font-family: ColfaxAI,Helvetica,sans-serif;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     position: sticky;
     top: 0;
-    z-index: 999;
+    *z-index: 999;
+    /*box-shadow: 0 5px 2px -2px rgba(0,0,0,.2);*/
+    
   }
   
   .navbar-container {
@@ -16,18 +69,17 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    max-width: 1500px;
+    /*max-width: 1500px;*/
   }
   
   .navbar-logo {
+    font-family: 'montserrat';
     color: rgb(0, 0, 0);
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
+    font-size: 2.4vw;
+    padding-right: 19vw; 
   }
   
   .fa-alien {
@@ -37,36 +89,51 @@
   
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     list-style: none;
-    text-align: center;
-    width: 60vw;
+    text-align: right;
+    /*width: 60vw;*/
     justify-content: end;
-    margin-right: 2rem;
+    
   }
   
   .nav-item {
     height: auto;
-
   }
   
   .nav-links {
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+    font-weight: 370;
     color: rgb(0, 0, 0);
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
+    position: sticky;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0vh 5vh;
     height: 100%;
   }
   
-  .nav-links:hover {
-    border-bottom: 4px solid rgb(255, 124, 36);
+  a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-links:hover,a:hover {
+    color: rgb(239,103,63);
+    transition: all 0.1s ease-out;
+    
+    
+  }
+
+  .navbar-logo:hover{
+    color: rgb(239,103,63);
     transition: all 0.1s ease-out;
   }
   
   .fa-bars {
-    color: rgb(243, 45, 45);
+    color: rgb(239,103,63);
   }
   
   .nav-links-mobile {
@@ -82,6 +149,16 @@
       position: relative;
     }
   
+    .navbar-logo{
+      font-size: 3rem;
+      text-align: center;
+      padding: 50%;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -94,70 +171,5 @@
       transition: all 0.5s ease;
     }
   
-    .nav-menu.active {
-      background: #c5c5c5;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-      
-    }
-  
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-    
-  
-    .nav-links:hover {
-      background: rgb(252, 252, 252);
-      color: #fd812e;
-      border-radius: 0;
-    }
-  
-    .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-  
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  
-    .fa-times {
-      color: rgb(161, 161, 161);
-      font-size: 2rem;
-    }
-  
-    .nav-links-mobile {
-      display: block;
-      text-align: center;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 80%;
-      text-decoration: none;
-      font-size: 1.5rem;
-      background-color: transparent;
-      color: rgb(0, 0, 0);
-      padding: 14px 20px;
-      border: 1px solid rgb(0, 0, 0);
-      transition: all 0.3s ease-out;
-    }
-  
-    .nav-links-mobile:hover {
-      background: rgb(247, 246, 246);
-      color: #242424;
-      transition: 250ms;
-    }
-    
+
   }

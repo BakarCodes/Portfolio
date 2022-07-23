@@ -1,10 +1,134 @@
-html{
-  scroll-behavior: smooth;
+@font-face {
+  font-family: 'karlaitalic';
+  src: url('./Fonts/karla-italicwght-webfont.woff2') format('woff2'),
+       url('./Fonts/karla-italicwght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+@font-face {
+  font-family: 'karlaregular';
+  src: url('./Fonts/karlawght-webfont.woff2') format('woff2'),
+       url('./Fonts/karlawght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 1';
+  src: url('./Fonts/ITCAvantGardeStd-BkCnObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-BkCnObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed';
+  src: url('./Fonts/ITCAvantGardeStd-XLtCn.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-XLtCn.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 2';
+  src: url('./Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 3';
+  src: url('./Fonts/ITCAvantGardeStd-DemiCnObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-DemiCnObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 4';
+  src: url('./Fonts/ITCAvantGardeStd-BkObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-BkObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 5';
+  src: url('./Fonts/ITCAvantGardeStd-DemiCnObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-DemiCnObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 6';
+  src: url('./Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+      url('./Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'space_monobold_italic';
+  src: url('./Fonts/spacemono-bolditalic-webfont.woff2') format('woff2'),
+       url('./Fonts/spacemono-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'space_monoitalic';
+  src: url('./Fonts/spacemono-italic-webfont.woff2') format('woff2'),
+       url('./Fonts/spacemono-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'space_monoregular';
+  src: url('./Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+       url('./Fonts/spacemono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'space_monobold';
+  src: url('./Fonts/spacemono-bold-webfont.woff2') format('woff2'),
+       url('./Fonts/spacemono-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: JetBrains Mono, monospace;
 }
+
 

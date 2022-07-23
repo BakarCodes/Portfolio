@@ -3,9 +3,8 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Components/Pages/Home';
-import GoGreen from './Components/Pages/GoGreen';
-import WeatherApp from './Components/Pages/WeatherApp';
-import Otio from './Components/Pages/Otio.js';
+import Projects from './Components/Pages/Projects';
+
 
 
 function App() {
@@ -15,9 +14,7 @@ function App() {
       <div className='Routes'>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/GoGreen' element={<GoGreen/>} />
-        <Route path='/Weather' element={<WeatherApp/>} />
-        <Route path='/Otio' element={<Otio/>} />
+        <Route path='/Projects' element={<Projects/>} />
       </Routes>
       </div>
     </div>

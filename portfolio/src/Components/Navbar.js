@@ -4,6 +4,8 @@ import { Button } from './Button';
 import './Navbar.css'
 
 
+    
+
 function Navbar() {
     const [click, setClick] = useState(false);
 
@@ -29,28 +31,33 @@ function Navbar() {
 
     return (
     <nav className='navbar'>
+        
         <div className='navbar-container'>
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                PORTFOLIO <i className='fa-solid fa-alien' />
+                ABUBAKAR
             </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
             </div>
             <ul2 className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li2 className='GoGreen'>
-                    <Link to = "/GoGreen" className='nav-links' onClick={closeMobileMenu}>
-                        GOGREEN
+                <li2 className='ProjBut'>
+                    <Link to = "/Projects" className='nav-links' onClick={closeMobileMenu}>
+                        PROJECTS
                     </Link>
                 </li2>
-                <li2 className='Weather'>
-                    <Link to = "/Weather" className='nav-links' onClick={closeMobileMenu}>
-                        WEATHER
+                <li2 className='GitHub'>
+                    <Link to = "/Github" className='nav-links' onClick={closeMobileMenu}>
+                        <a href='https://www.github.com/bakarcodes'>
+                            GITHUB
+                        </a>
                     </Link>
                     
                 </li2>
-                <li2 className='Otio'>
-                    <Link to = "/Otio" className='nav-links' onClick={closeMobileMenu}>
-                        OTIO
+                <li2 className='LinkedIn'>
+                    <Link to = "/LinkedIn" className='nav-links' onClick={closeMobileMenu}>
+                        <a href="https://www.linkedin.com/in/abubakargudal">
+                            LINKEDIN
+                        </a>
                     </Link>
                 </li2>
             </ul2>

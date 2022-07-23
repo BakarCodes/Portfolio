@@ -1,95 +1,240 @@
-body{
-    background-color: rgb(254, 254, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Home{
-    font-family: ColfaxAI,Helvetica,sans-serif;
-    border-width: 4px;
-    border-color: black;
-    height: 1000px;
+@font-face {
+  font-family: 'space_monoregular';
+  src: url('../../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+       url('../../Fonts/spacemono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.About{
-    padding-top: 10%;
-    display: flex;
-    display: inline-block;
-    margin: 10;
-    padding: 0;
-    flex-direction: column;
-    text-align: left;
+@font-face {
+  font-family: 'space_monobold';
+  src: url('../../Fonts/spacemono-bold-webfont.woff2') format('woff2'),
+       url('../../Fonts/spacemono-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ITC Lubalin Graph Std';
+  src: url('../../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+      url('../../Fonts/LubalinGraphStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Lubalin Graph Std 2';
+  src: url('../../Fonts/LubalinGraphStd-Demi.woff2') format('woff2'),
+      url('../../Fonts/LubalinGraphStd-Demi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+    background-color: rgb(241,191,1);
+    
+}
+
+section{
+  height:100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.one{
+  
+  display:flex; flex-direction:row;
+  padding-left: 20rem;
+  align-items: center;
+  /*background-color: rgb(241,191,1);*/
+  background-color: rgb(241,191,1);
+}
+.text{
+  padding-bottom: 30%;
+  padding-top: 10%;
+
+}
+.Greeting{
+  
+  font-family: 'ITC Lubalin Graph Std 2';
+  font-weight: 300;
+  font-size: 10rem;
+  
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
+}
+.Profession{
+  font-size: 3.3rem;
+}
+
+.Home{
+  font-family: 'Montserrat';
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+.two{
+  background-color: rgb(241,191,1);
+}
+
+.three{
+  margin-top: 0%;
+  height:100vh;
+}
+.grid-col-span2 {
+  grid-column: span 2;
+}
+
+.testimonial-grid{
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 2rem;
+  width: min(70%,170vw);
+  height: min(90%,100vw);
+  margin-inline: auto;
+  
+}
+
+.testimonial{
+  background-color: rgb(249, 211, 180);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  box-shadow: 7px 7px 1px -1px rgba(0,0,0,.2);
+}
+
+.testimonial:hover{
+
+}
+
+article {
+  transition: transform 0.2s ease-in;
+}
+
+article:hover{
+  transform: scale(1.04);
+  
+  transition: all 0.6s ease-out;
+}
+
+.article,p{
+  font-family: 'ITC Lubalin Graph Std';
+  color: rgb(0, 0, 0);
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+
+.testimonial:nth-child(2){
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+
+
+.testimonial:nth-child(3){
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start:1 ;
+  grid-row-end: 2;
+}
+
+.testimonial:nth-child(4){
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start:2 ;
+  grid-row-end: 3;
+}
+
+.testimonial:last-child:hover{
+  transform: scale(1.02);
+  
+  transition: all 0.6s ease-out;
+
 }
 
 h1{
-    font-size: 1.5rem;
-    color: rgb(255, 151, 53);
-    font-size: 5rem;
-    text-align: center;
+  
+  text-align: center;
+  font-weight: 400;
 }
 
 h2{
-    font-size: 3rem;
-    text-align: left;
+  text-align: center;
+  font-weight: 400;
 }
 
 .App {
-    font-family: JetBrains Mono, monospace;
-    text-align: center;
+    
 }
   
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-.wrapper{
-    padding-top: 30px;
-    padding-bottom: 40px;
-    width: 100%;
-    margin-top: 30px;
- 
+.AboutMe,h2{
+  
+  font-family: 'ITC Lubalin Graph Std';
+  color: rgb(0, 0, 0);
+  font-weight: 100;
 }
-ul {
-    width: 900px;
-    display: flex;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 25px;
-    justify-content: center;
+
+@media screen and (max-width: 960px){
+  .text{
+    top: 0,0,0,0;
+    padding-right: 30%;
+    padding-bottom: 40%;
   }
-  
-li {
-    background-color: rgba(252, 163, 61, 0.801);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    cursor: pointer;
+  .Greeting{
+    font-size: 5rem;
   }
-  
-li:last-child {
-    margin-bottom: 0px;
+  .Profession{
+    font-size: 1.7rem;
   }
-  
-.avatar1 {
-    width: 40px;
-    height: 40px;
+  .testimonial-grid{
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(6, 1fr);
+    padding-block: 2rem;
     
-    border-radius: 20px;
+    width: min(90%,170vw);
+    height: min(90%,100vw);
+    margin-inline: auto;
   }
 
-.row {
-    width: 100%;
-    height: 8px;
-    
-    border-radius: 10px;
-    margin-top: 12px;
+  .article,h2{
+    font-size: 1.5rem ;
+  }
+
+  .article,p{
+    font-size: 0.7rem;
   }
   
+  .testimonial:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  .testimonial:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+
+
+  .testimonial:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+  }
+
+  .testimonial:nth-child(4){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+  }
+}
+
+
+

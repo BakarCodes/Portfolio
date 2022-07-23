@@ -1,73 +1,56 @@
 import React from 'react'
 import "./Home.css"
-import { useState } from "react";
-import {motion, AnimateSharedLayout, AnimatePresence} from 'framer-motion'
-
-
-
+import Card from '../Card'
 
 function Home() {
     return (
     
     <div className='Home'>
-        <h1>ABUBAKAR GUDAL</h1>
+      
+        <section class="one">
+          <div className='text'>
+            <h1 className='Greeting'>
+              HELLO.
+            </h1>
+            <h2 className='Profession'>
+                SOFTWARE ENGINEER
+            </h2>
+          </div>
+          <div className='Scroll-down'>
 
-        <div className='About'>
-            <h2>SOFTWARE ENGINEER</h2>
-        </div>
-        
-        <div className="wrapper">
-            <AnimateSharedLayout>
-                <motion.ul layout initial={{ borderRadius: 25 }}>
-                    {items.map(item => (
-                        <Item key={item} />
-                    ))}
-                </motion.ul>
-            </AnimateSharedLayout>
+          </div>
+        </section>
+        <section class="two">
+          <main className='testimonial-grid'>
+            <article className='testimonial grid-col-span2'>
+              <h2 className='AboutMe'>Weather App</h2>
+              <p> An iOS developed weather application. this utilised the framework of Xcode. </p>
+            </article>
             
-        </div>
-        
+            <article className='testimonial'>
+              <h2 className='AboutMe'>GoGreen</h2>
+              <p> GoGreen’s main target is to provide a simple system where users can interactively recycle.</p>
+            </article>
+            <article className='testimonial'>
+              <h2 className='AboutMe'>OTIO</h2>
+              <p>	
+              </p>
+            </article>
+            <article className='testimonial'>
+              <h2 className='AboutMe'>OTIO</h2>
+              <p>	
+              </p>
+            </article>
+            
+          </main>
+        </section>
+        <section class="three">
+          <h1>3</h1>
+        </section>
     </div>
     
+   
   )
 }
 
 export default Home
-
-function Item() {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggleOpen = () => setIsOpen(!isOpen);
-  
-    return (
-        
-      <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 0 }}>
-            <motion.div className="avatar" layout>
-                <h2>GOGREEN</h2>
-            </motion.div>
-        <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
-      </motion.li>
-      
-    );
-  }
-
-  function Content() {
-    return (
-      <motion.div
-        layout
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <div className="row">
-            <p>Hello</p>
-        </div>
-        <div className="row">
-        </div>
-        <div className="row">
-        </div>
-      </motion.div>
-    );
-  }
-  
-  const items = [0,1,2];
