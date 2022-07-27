@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import { Button } from './Button';
 import './Navbar.css'
+import github from '../Images/github.svg'
 
 
     
@@ -46,10 +47,12 @@ function Navbar() {
                     </Link>
                 </li2>
                 <li2 className='GitHub'>
-                    <Link to = "/Github" className='nav-links' onClick={closeMobileMenu}>
+                    <Link to = "/Github" className='nav-links' onClick={closeMobileMenu} target="_blank" >
                         <a href='https://www.github.com/bakarcodes'>
                             GITHUB
+                            {/*<img height={30} src={github} alt='github'/>*/}
                         </a>
+                        
                     </Link>
                     
                 </li2>

@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Home.css"
 import Card from '../Card'
+import { Button } from '../Button'
+import scroll from '../../Images/scroll.svg'
 
 function Home() {
     return (
@@ -17,7 +19,10 @@ function Home() {
             </h2>
           </div>
           <div className='Scroll-down'>
-
+            <Button>
+              PROJECTS
+              <img  src={scroll} alt='scroll-button'/>
+            </Button>
           </div>
         </section>
         <section class="two">

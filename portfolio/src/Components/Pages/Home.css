@@ -30,6 +30,25 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 1';
+  src: url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff2') format('woff2'),
+      url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std 6';
+  src: url('../../Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+      url('../../Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 
 body{
     background-color: rgb(241,191,1);
@@ -45,7 +64,7 @@ section{
 .one{
   
   display:flex; flex-direction:row;
-  padding-left: 20rem;
+  padding-left: 20vw;
   align-items: center;
   /*background-color: rgb(241,191,1);*/
   background-color: rgb(241,191,1);
@@ -56,16 +75,19 @@ section{
 
 }
 .Greeting{
-  
-  font-family: 'ITC Lubalin Graph Std 2';
+  font-family: 'ITC Lubalin Graph Std';
   font-weight: 300;
-  font-size: 10rem;
+  font-size: 10vw;
   
   color: rgb(0, 0, 0);
   text-decoration: underline rgb(0, 0, 0);
 }
 .Profession{
-  font-size: 3.3rem;
+  font-size: 3.3vw;
+}
+
+Button{
+  background-color: rgb(241,191,1);
 }
 
 .Home{
@@ -82,7 +104,7 @@ section{
 
 .three{
   margin-top: 0%;
-  height:100vh;
+  height:90vh;
 }
 .grid-col-span2 {
   grid-column: span 2;
