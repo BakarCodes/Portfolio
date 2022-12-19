@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'ITC Lubalin Graph Std';
+    src: url('../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+        url('../Fonts/LubalinGraphStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root{
     --primary:rgb(241,191,1);
 }
 
 .btn{
+    font-family: 'ITC Lubalin Graph Std';
+    font-weight: 500;
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -36,7 +47,6 @@
 
 .btn--medium:hover,
 .btn--large:hover{
-    background: rgba(0, 0, 0, 0.103);
-    color: rgb(0, 0, 0);
+
     transition: all 0.3s ease-out;
 }

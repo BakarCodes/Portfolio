@@ -52,7 +52,6 @@
 
 body{
     background-color: rgb(241,191,1);
-    
 }
 
 section{
@@ -86,7 +85,10 @@ section{
   font-size: 3.3vw;
 }
 
-Button{
+.Scroll-down{
+  font-family: 'ITC Lubalin Graph Std';
+  margin-top: 70vh;
+  margin-right: 20vh;
   background-color: rgb(241,191,1);
 }
 
