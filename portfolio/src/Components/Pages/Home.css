@@ -1,9 +1,46 @@
 @font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../../Fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('../../Fonts/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono NL';
+  src: url('../../Fonts/JetBrainsMonoNL-Bold.woff2') format('woff2'),
+      url('../../Fonts/JetBrainsMonoNL-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Medium';
+  src: url('../../Fonts/JetBrainsMonoNL-Medium.woff2') format('woff2'),
+      url('../../Fonts/JetBrainsMonoNL-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'space_monoregular';
   src: url('../../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
        url('../../Fonts/spacemono-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'karlaregular';
+  src: url('../../Fonts/karlawght-webfont.woff2') format('woff2'),
+       url('../../Fonts/karlawght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {
@@ -12,176 +49,194 @@
        url('../../Fonts/spacemono-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: 'ITC Lubalin Graph Std';
-  src: url('../../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
-      url('../../Fonts/LubalinGraphStd-Book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'ITC Lubalin Graph Std 2';
-  src: url('../../Fonts/LubalinGraphStd-Demi.woff2') format('woff2'),
-      url('../../Fonts/LubalinGraphStd-Demi.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ITC Avant Garde Gothic Std 1';
-  src: url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff2') format('woff2'),
-      url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-  
-}
-
-@font-face {
-  font-family: 'ITC Avant Garde Gothic Std 6';
-  src: url('../../Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
-      url('../../Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-
-body{
-    background-color: rgb(241,191,1);
 }
 
 section{
-  height:100vh;
+  height:95vh;
   display: flex;
   scroll-snap-align: start;
 }
 
 .one{
-  
-  display:flex; flex-direction:row;
-  padding-left: 20vw;
+  display:flex; 
+  flex-direction:row;
   align-items: center;
-  /*background-color: rgb(241,191,1);*/
-  background-color: rgb(241,191,1);
-}
-.text{
-  padding-bottom: 30%;
-  padding-top: 10%;
-
-}
-.Greeting{
-  font-family: 'ITC Lubalin Graph Std';
-  font-weight: 300;
-  font-size: 10vw;
-  
-  color: rgb(0, 0, 0);
-  text-decoration: underline rgb(0, 0, 0);
-}
-.Profession{
-  font-size: 3.3vw;
+  background-color: rgb(35, 39, 45);
 }
 
-.Scroll-down{
-  font-family: 'ITC Lubalin Graph Std';
-  margin-top: 70vh;
-  margin-right: 20vh;
-  background-color: rgb(241,191,1);
-}
 
 .Home{
-  font-family: 'Montserrat';
+  font-family: 'JetBrains Mono';
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 90vh;
+  height: 95vh;
 }
 
 .two{
-  background-color: rgb(241,191,1);
+  background-color: rgb(35, 39, 45);
+  height: 95vh;
 }
 
 .three{
   margin-top: 0%;
-  height:90vh;
+  height:95vh;
 }
 .grid-col-span2 {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .testimonial-grid{
   display: grid;
-  gap: 2vw;
-  grid-template-columns: repeat(4, 1fr);
-  padding-block: 2rem;
+  gap: 1vw;
+  grid-template-columns: repeat(9, 1fr);
   width: min(70%,170vw);
-  height: min(90%,100vw);
+  height: min(80%,80vw);
   margin-inline: auto;
-  
+  margin-left: 15%;
+
 }
 
 .testimonial{
-  background-color: rgb(249, 211, 180);
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 0px;
-  box-shadow: 7px 7px 1px -1px rgba(0,0,0,.2);
-}
-
-.testimonial:hover{
-
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1px;
+  padding: 20px; /* Adjust padding as needed */
+  overflow-wrap: break-word;
+  
 }
 
 article {
   transition: transform 0.2s ease-in;
 }
 
-article:hover{
-  transform: scale(1.04);
-  
-  transition: all 0.6s ease-out;
+.personal{
+  padding-top: 5%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 }
 
-.article,p{
-  font-family: 'ITC Lubalin Graph Std';
-  color: rgb(0, 0, 0);
+.testimonial{
+  font-family: 'Montserrat';
+  color: rgb(255, 255, 255);
   font-size: 1.1vw;
-  text-align: center;
+  text-align: left;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.testimonial:first-child{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 
 
 .testimonial:nth-child(2){
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
-
-
-.testimonial:nth-child(3){
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start:1 ;
-  grid-row-end: 2;
-}
-
-.testimonial:nth-child(4){
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start:2 ;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.testimonial:last-child:hover{
-  transform: scale(1.02);
-  
-  transition: all 0.6s ease-out;
+.subheading{
+  text-align: left;
+  font-family: 'JetBrains Medium';
+  font-size: 1.5vw;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  margin-bottom: 3%;
+}
+
+.imgBox{
+  background-color: white;
+  height: 40%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBox2{
+  background-color: rgb(0, 0, 0);
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgBox3{
+  background-color: rgb(0, 0, 0);
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
+
+.textBox{
+  border-color: 2px black;
+  padding: 5%;
+}
+
+
+
+.project-grid{
+  display: grid;
+  gap: 4vw;
+  grid-template-columns: repeat(9, 1fr);
+  width: min(70%,170vw);
+  height: min(70%,80vw);
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project{
+  border-radius: 2px;
+  background-color: white;
+}
+
+
+.project{
+
+}
+
+.project:first-child{
+  border-top: 4px solid rgb(51, 254, 168);
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+
+.project:nth-child(2){
+  border-top: 4px solid rgb(51, 254, 168);
+  background-color: white;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+
+
+.project:nth-child(3){
+  border-top: 4px solid rgb(51, 254, 168);
+  background-color: white;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+
 h1{
-  
   text-align: center;
   font-weight: 400;
 }
@@ -191,16 +246,124 @@ h2{
   font-weight: 400;
 }
 
+.buttons{
+
+  display: flex;
+  margin-top: 10%;
+  gap: 30px;
+  height: 8%;
+}
+
+.projectsButton{
+  border-radius: 20px;
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0);
+  width: 30%;
+  border: 2px solid rgb(51, 254, 168);
+}
+
+.technologies{
+  margin-top: 10%;
+  display: flex;
+  margin-top: 3%;
+  gap: 10px;
+  height: 5%;
+  align-items: center;
+}
+
+.JavaScript{
+  text-align: center;
+  padding: 3px;
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  border-top: 4px solid rgb(254, 236, 33);
+  width: 30%;
+}
+
+.HTML{
+  text-align: center;
+  padding: 3px;
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  border-top: 4px solid rgb(254, 166, 33);
+  width: 30%;
+}
+
+.CSS{
+  text-align: center;
+  padding: 3px;
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  border-top: 4px solid rgb(33, 55, 254);
+  width: 30%;
+}
+
+.Gcloud{
+  text-align: center;
+  padding: 3px;
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  border-top: 4px solid rgb(254, 33, 33);
+  width: 30%;
+}
+.projectsButton:hover{
+  color: black;
+  background-color: rgb(51, 254, 168);
+  cursor: pointer;
+  transition: ease-in 0.5s;
+  transition: ease-out 0.5s;
+}
+
+.contactButton{
+  font-family: 'JetBrains Mono';
+  font-size: 2vh;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(51, 254, 168);
+  border: 2px solid rgb(51, 254, 168);
+  width: 30%;
+}
+
+.contactButton:Hover{
+  cursor: pointer;
+}
+
 .App {
     
 }
+
   
-.AboutMe,h2{
-  
-  font-family: 'ITC Lubalin Graph Std';
+.AboutMe{
+  text-align: left;
+  font-family: 'JetBrains Medium';
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+.descript{
+  text-align: left;
+  font-family: 'JetBrains Medium';
+  font-size: 1.1vw;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+.boxTitle{
+  text-align: left;
+  font-family: 'Montserrat';
+  font-size: 2vw;
   color: rgb(0, 0, 0);
   font-weight: 100;
 }
+
+
 
 @media screen and (max-width: 960px){
   .text{
@@ -262,3 +425,14 @@ h2{
 
 
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
