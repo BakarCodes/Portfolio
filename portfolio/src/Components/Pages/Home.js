@@ -1,10 +1,16 @@
 import React from 'react'
 import "./Home.css"
-import Card from '../Card'
-import { Button } from '../Button'
-import scroll from '../../Images/scroll.svg'
-import logo from '../../Images/Logo.png'
-import novo from '../../Images/NOVO.jpeg'
+import {
+  MDBCard,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardFooter,
+  MDBRow,
+  MDBCol
+} from 'mdb-react-ui-kit';
+
 
 function Home() {
     return (
@@ -12,82 +18,67 @@ function Home() {
     <div className='Home'>
       
         <section class="one">
-          <main className='testimonial-grid'>
-            <article className='testimonial'>
-              <h2 className='AboutMe'>Software Developer</h2>
-              <p className='personal'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <div className='buttons'>
-                <button className='projectsButton'>
-                  Projects
-                </button>
-                <button className='contactButton'>
-                  Contact me
-                </button>
-              </div>
-            </article>
-            
-            <article className='testimonial'>
-              <h2 className='AboutMe'>Box2</h2>
-              <p> 
-              </p>
-            </article>
-          </main>
+
         </section>
         <section class="two">
-          <main className='screenGrid'>
-            <div className="subheading">
-              <h2>
-                Projects
-              </h2>
-            </div>
-            <main className='project-grid'>
-                <article className='project'>
-                  <div className='imgBox'>
-                    
-                  </div>
-                  <div className='textBox'>
-                    <h2 className='boxTitle'>Novo.ai</h2>
-                    <p className='descript'>
-                      A solo developed chrome extension that uses image recognition technology to provide users sustainable alternatives to fast fashion clothes	
-                    </p>
-                    <div className='technologies'>
-                      <div className='JavaScript'>
-                          JavaScript
-                        </div>
-                        <div className='HTML'>
-                          HTML
-                        </div>
-                        <div className='CSS'>
-                          CSS
-                        </div>
-                        <div className='Gcloud'>
-                          Gcloud
-                        </div>
-                    </div>
-                  </div>
-                </article>
-              
-                <article className='project'>
-                <div className='imgBox2'></div>
-                  <h2 className='boxTitle'>Box3</h2>
-                  <p className='descript'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-                  </p>
-                </article>
-                <article className='project'>
-                  <div className='imgBox3'></div>
-                  <h2 className='boxTitle'>Box4</h2>
-                  <p className='descript'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-                  </p>
-                </article>
-              </main>
-            </main>
-          </section>
-        <section class="three">
-          <h1>3</h1>
+          <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
+            <MDBCol>
+              <MDBCard className='project-card'>
+                <MDBCardImage
+                  src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+                  alt='...'
+                  position='top'
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a longer card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.
+                  </MDBCardText>
+                </MDBCardBody>
+                <MDBCardFooter>
+                  <small className='text-muted'>Last updated 3 mins ago</small>
+                </MDBCardFooter>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard className='project-card'>
+                <MDBCardImage
+                  src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+                  alt='...'
+                  position='top'
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This card has supporting text below as a natural lead-in to additional content.
+                  </MDBCardText>
+                </MDBCardBody>
+                <MDBCardFooter>
+                  <small className='text-muted'>Last updated 3 mins ago</small>
+                </MDBCardFooter>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard className='project-card'>
+                <MDBCardImage
+                  src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+                  alt='...'
+                  position='top'
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>Card title</MDBCardTitle>
+                  <MDBCardText>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    card has even longer content than the first to show that equal height action.
+                  </MDBCardText>
+                </MDBCardBody>
+                <MDBCardFooter>
+                  <small className='text-muted'>Last updated 3 mins ago</small>
+                </MDBCardFooter>
+              </MDBCard>
+            </MDBCol>
+          </MDBRow>
         </section>
     </div>
     
