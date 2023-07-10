@@ -1,3 +1,59 @@
+@font-face {
+    font-family: 'futura';
+    src: url('../Fonts/futura_bold-webfont.woff2') format('woff2'),
+         url('../Fonts/futura_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-.project-card{
+}
+
+.one{
+    background-color: rgb(246, 238, 227);
+    height: 100vh;
+}
+
+.title{
+    font-family: 'futura';
+    color: rgb(231, 57, 50);
+    font-size: 15vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-right: 11%;
+    padding-top: 1%;
+}
+
+.subheading{
+    font-family: 'futura';
+    color: rgb(255, 131, 131);
+    font-size: 8vw;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-right: 10%;
+}
+.two{
+    background-color: rgb(246, 238, 227);
+    height: 100vh;
+}
+.novo{
+}
+
+.image-grid{
+    border: 2px solid black;
+    height: 100%;
+}
+
+.image{
+    border: 2px solid black;
+    height: 80%;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-right: 11%;
 }
