@@ -24,7 +24,7 @@ function Home() {
                 01
               </div>
               <div className='projectDesc'>
-                Novo is a chrome extension that targets fast fashion companies to provide sustainable alternatives from used marketplaces through image recognition technology. I built this extension as final year project and continued development post submission. Through a variety of technological combination such as Google Cloud Vision and a Kaggle database, this project garnered successful results.
+                Novo is a chrome extension that targets fast fashion companies to provide sustainable alternatives from used marketplaces through image recognition technology. I built this extension as final year project and continued development post submission. Through a combination of technological such as Google Cloud Vision and a Kaggle database, this project garnered successful results.
               </div>
               <div className='technologies'>
                 <p className='js'>
@@ -87,6 +87,9 @@ function Home() {
             </div>
 
           </div>
+        </section>
+        <section class="four">
+
         </section>
     </div>
     

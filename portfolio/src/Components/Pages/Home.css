@@ -54,7 +54,7 @@
     margin-right: 10%;
 }
 .two{
-    border-bottom: 5px solid rgb(0, 0, 0);
+
     background-color: rgb(246, 238, 227);
     height: 100vh;
     display: flex;
@@ -134,8 +134,9 @@
 }
 
 .github{
-    width: 30%;
-    padding: 6px;
+    width: 40%;
+    height: 30px;
+
     font-family: 'futura';
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -190,6 +191,11 @@
 }
 
 .three{
+    background-color: rgb(246, 238, 227);
+    height: 100vh;
+}
+
+.four{
     background-color: rgb(246, 238, 227);
     height: 100vh;
 }

@@ -6,8 +6,10 @@ function Sidebar() {
     <div className='sidebar'>
       <h2 className='intro'>Introduction (i)</h2>
       <ul>
-        <li>Home</li>
-        <li>Projects</li>
+        <li>About Me</li>
+        <li>NOVO</li>
+        <li>Weather App</li>
+        <li>Contacts</li>
         {/* Add more menu items as needed */}
       </ul>
     </div>
