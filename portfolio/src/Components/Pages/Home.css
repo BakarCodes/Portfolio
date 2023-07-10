@@ -7,6 +7,16 @@
 
 }
 
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../Fonts/helvetica_neue_lt_std_33_thin_extended_oblique-webfont.woff2') format('woff2'),
+         url('../Fonts/helvetica_neue_lt_std_33_thin_extended_oblique-webfont.woff') format('woff');
+    font-weight: 1000;
+    font-style: normal;
+
+}
+
 .one{
     background-color: rgb(246, 238, 227);
     height: 100vh;
@@ -22,7 +32,6 @@
     align-items: right;
     text-align: right;
     margin-right: 11%;
-    padding-top: 1%;
 }
 
 .subheading{
@@ -34,26 +43,153 @@
     text-align: right;
     margin-right: 10%;
 }
+
+.location{
+    font-family: 'futura';
+    color: rgb(153, 98, 98);
+    font-size: 5vw;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-right: 10%;
+}
 .two{
+    border-bottom: 5px solid rgb(0, 0, 0);
     background-color: rgb(246, 238, 227);
     height: 100vh;
-}
-.novo{
+    display: flex;
+    justify-content: flex-end;  /* Aligns the child (.image-grid) to the end of the container */
+      /* Adds some padding to the right so that .image-grid is not touching the edge */
 }
 
 .image-grid{
-    border: 2px solid black;
+    margin-right: 3%;
+    width: 80%;
     height: 100%;
+    display: flex;
+    justify-content: space-around;  /* Distribute items evenly along the row */
+    border-bottom: 2px red;
+}
+
+
+.projectOne{
+    margin-left: 22%;
+    margin-top: 12%;
+    height: 60%;
+    width: 40%;
+    font-family: 'futura';
+    display: grid;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+
+
+.projectTitle{
+    height: 70%;
+    font-size: 10vw;
+    font-family: 'futura';
+    color: rgb(255, 131, 131);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.projectDesc{
+    padding: 2%;
+    font-size: 1vw;
+    margin-top: -13%;
+    font-family: 'helvetica';
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 .image{
-    border: 2px solid black;
-    height: 80%;
-    width: 40%;
-    margin: 0 auto;
+    margin-top: 15%;
+    height: 90%;
+    width: 80%;
     display: flex;
     justify-content: right;
     align-items: right;
     text-align: right;
-    margin-right: 11%;
+}
+
+.technologies{
+    font-family: 'futura';
+    color: rgb(231, 57, 50);
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+}
+
+.links{
+    display: flex;
+    padding: 10px;
+    
+}
+
+.github{
+    width: 30%;
+    padding: 6px;
+    font-family: 'futura';
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    box-shadow: 5px 5px;
+}
+.js{
+
+}
+
+.image-grid2{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;  /* Distribute items evenly along the row */
+    border-bottom: 2px red;
+}
+
+.imageTwo{
+    margin-left: 30%;
+    margin-top: 20%;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+.projectTwo{
+    margin-left: 5%;
+    margin-top: 22%;
+    height: 60%;
+    width: 100%;
+    font-family: 'helvetica';
+    display: grid;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.projectTwoDesc{
+    padding: 2%;
+    font-size: 1vw;
+    margin-top: -13%;
+    font-family: 'helvetica';
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.three{
+    background-color: rgb(246, 238, 227);
+    height: 100vh;
 }
