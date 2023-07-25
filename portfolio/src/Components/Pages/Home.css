@@ -19,7 +19,7 @@
 
 .one{
     background-color: rgb(246, 238, 227);
-    height: 100vh;
+    height: 120vh;
 }
 
 .title{
@@ -56,14 +56,90 @@
 .two{
 
     background-color: rgb(246, 238, 227);
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: flex-end;  /* Aligns the child (.image-grid) to the end of the container */
       /* Adds some padding to the right so that .image-grid is not touching the edge */
 }
 
+.grid-col-span2 {
+  grid-column: span 1;
+}
+
+.testimonial-grid{
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(9, 1fr);
+  width: min(70%,170vw);
+  height: min(80%,80vw);
+  margin-inline: auto;
+  margin-left: 15%;
+
+}
+
+.testimonial{
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1px;
+  padding: 20px; /* Adjust padding as needed */
+  overflow-wrap: break-word;
+  
+}
+
+article {
+  transition: transform 0.2s ease-in;
+}
+
+.personal{
+  color: black;
+  font-family: helvetica;
+  padding-top: 5%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+.projectsButton{
+  box-shadow: 3px 3px;
+  background-color: rgb(255, 131, 131);
+  border: 2px solid black;
+}
+
+.contactButton{
+  box-shadow: 3px 3px;
+}
+.testimonial{
+  font-family: 'futura';
+  color: rgb(255, 131, 131);
+  font-size: 1.1vw;
+  text-align: left;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.testimonial:first-child{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+
+.testimonial:nth-child(2){
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 .image-grid{
-    margin-right: 3%;
+    margin-right: 10%;
     width: 80%;
     height: 100%;
     display: flex;
@@ -74,7 +150,6 @@
 
 .projectOne{
     margin-left: 22%;
-    margin-top: 12%;
     height: 60%;
     width: 40%;
     font-family: 'futura';
@@ -100,7 +175,6 @@
 .projectDesc{
     padding: 2%;
     font-size: 1vw;
-    margin-top: -13%;
     font-family: 'helvetica';
     color: rgb(0, 0, 0);
     display: flex;
@@ -110,9 +184,9 @@
 }
 
 .image{
-    margin-top: 15%;
-    height: 90%;
-    width: 80%;
+    margin-top: 5%;
+    height: 70%;
+    width: 42%;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -148,7 +222,9 @@
 }
 
 .image-grid2{
-    width: 90%;
+    margin-left: 30%;
+    gap: 30px;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: space-around;  /* Distribute items evenly along the row */
@@ -156,10 +232,8 @@
 }
 
 .imageTwo{
-    margin-left: 30%;
-    margin-top: 20%;
-    height: 90%;
-    width: 80%;
+    margin-top: 7%;
+    height: 70%;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -168,7 +242,6 @@
 
 .projectTwo{
     margin-left: 5%;
-    margin-top: 22%;
     height: 60%;
     width: 100%;
     font-family: 'helvetica';
@@ -179,9 +252,7 @@
 }
 
 .projectTwoDesc{
-    padding: 2%;
     font-size: 1vw;
-    margin-top: -13%;
     font-family: 'helvetica';
     color: rgb(0, 0, 0);
     display: flex;
@@ -196,6 +267,11 @@
 }
 
 .four{
+    background-color: rgb(246, 238, 227);
+    height: 100vh;
+}
+
+.five{
     background-color: rgb(246, 238, 227);
     height: 100vh;
 }

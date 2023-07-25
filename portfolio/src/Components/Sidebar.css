@@ -9,24 +9,21 @@
 
 .sidebar {
     font-family: 'helvetica';
-    width: 200px;
+    width: 120px;
     height: 100vh;
     position: fixed;
-    left: 20;
+    left: 25;
+    margin-left: 2%;
     top: 0;
     background-color: rgb(246, 238, 227);
-    color: rgb(231, 57, 50);
+    color: rgb(255, 70, 64);
     padding: 3px;
     font-size: 1.1vw;
   }
   
-  .intro {
-    margin-top: 30%;
-    font-size: 1.3vw;
-
-  }
   
   .sidebar ul {
+    margin-top: 35%;
     list-style-type: none;
     padding: 0;
   }
@@ -36,6 +33,7 @@
   }
   
   .sidebar ul li:hover {
-    background-color: #ddd;
+    border-bottom: 2px solid rgb(255, 70, 64);
+    transition: 0.1s;
   }
   
