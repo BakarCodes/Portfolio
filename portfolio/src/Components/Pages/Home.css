@@ -77,6 +77,16 @@
 
 }
 
+.Company{
+  color: rgb(62, 62, 62);
+}
+
+.roleName{
+  color: rgb(105, 105, 105);
+}
+.AboutMe{
+  font-size: 5vh;
+}
 .testimonial{
   background-color: rgba(255, 255, 255, 0);
   border-radius: 1px;
@@ -92,12 +102,18 @@ article {
 .personal{
   color: black;
   font-family: helvetica;
-  padding-top: 5%;
+  padding-top: 1%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 }
 
 .buttons{
+  display: flex;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+.links{
   display: flex;
   gap: 30px;
   margin-top: 5%;
@@ -110,6 +126,12 @@ article {
 }
 
 .contactButton{
+  box-shadow: 3px 3px;
+  background-color: rgb(255, 131, 131);
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 3px;
   box-shadow: 3px 3px;
 }
 .testimonial{
@@ -206,17 +228,38 @@ article {
     padding: 10px;
     
 }
+.githubLink{
+  text-decoration: none;
+  color: black;
+}
 
 .github{
-    width: 40%;
-    height: 30px;
-
-    font-family: 'futura';
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
-    box-shadow: 5px 5px;
+  font-family: futura;
+  box-shadow: 3px 3px;
+  background-color: rgb(255, 131, 131);
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  box-shadow: 3px 3px;
 }
+
+.projects{
+  text-decoration: none;
+  color: black;
+}
+.wrappifyButton{
+  font-family: futura;
+  box-shadow: 3px 3px;
+  background-color: rgb(255, 131, 131);
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  box-shadow: 3px 3px;
+
+}
+
 .js{
 
 }

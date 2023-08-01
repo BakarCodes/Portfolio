@@ -13,12 +13,11 @@
     height: 100vh;
     position: fixed;
     left: 25;
-    margin-left: 2%;
     top: 0;
     background-color: rgb(246, 238, 227);
     color: rgb(255, 70, 64);
     padding: 3px;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
   }
   
   
