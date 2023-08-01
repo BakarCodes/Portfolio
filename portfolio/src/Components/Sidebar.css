@@ -9,7 +9,7 @@
 
 .sidebar {
     font-family: 'helvetica';
-    width: 120px;
+    width: 150px;
     height: 100vh;
     position: fixed;
     left: 25;
@@ -17,7 +17,7 @@
     background-color: rgb(246, 238, 227);
     color: rgb(255, 70, 64);
     padding: 3px;
-    font-size: 1.3vw;
+    font-size: 3vh;
   }
   
   

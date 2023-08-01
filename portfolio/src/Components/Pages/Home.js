@@ -125,7 +125,7 @@ deploying a range of technologies and frameworks. Extensive experience in Agile 
                 </div>
                 <div className='links'>
                 <button className='github'>
-                    <a className="githubLink" href="https://www.github.com/bakarcodes" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a className="githubLink" href="https://github.com/BakarCodes/Wrappify" target="_blank" rel="noopener noreferrer">Github</a>
                 </button>
                   <a className='wrappifyButton' href="https://www.wrappify.uk/" target="_blank" rel="noopener noreferrer">Check Wrappify</a>
                 </div>
