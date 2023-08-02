@@ -33,8 +33,9 @@ function Home() {
           <main className='testimonial-grid'>
             <article className='testimonial'>
             <h2 className='AboutMe'>Professional Experience</h2>
-              <div>
+              <div className='profess'>
                 <h4 className='Company'>Lobby</h4>
+                <h5 className='roleName'>Oct 2021 - Aug 2022</h5>
                 <h5 className='roleName'> Software Engineer</h5>
                 <p className='personal'>
                   Aided in user interface design, developed and maintained vital backend databases with SQL. Integral in developing infrastructure as code, effectively managing project deadlines. Gained in-depth understanding of Agile work environment and team roles. Proactively sought feedback for professional growth and skill enhancement.
@@ -54,8 +55,9 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className='profess'>
                 <h4 className='Company'>Made By Fire</h4>
+                <h5 className='roleName'>Jun 2018 - Aug 2018</h5>
                 <h5 className='roleName'>Software Engineer</h5>
                 <p className='personal'>
                   Monitored, managed, and maintained test and production environments, optimising for availability, performance, and security. Designed front-end and back-end of the app, integrating Google APIs and SWIFT, meeting project timelines. Enhanced communication and teamwork skills through participation in daily Scrum stand-ups and Sprint Retrospectives.
