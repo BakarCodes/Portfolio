@@ -248,6 +248,16 @@ article {
   text-decoration: none;
   color: black;
 }
+
+.contactButton:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.projects:hover{
+  text-decoration: none;
+  color: black;
+}
 .wrappifyButton{
   font-family: futura;
   box-shadow: 3px 3px;
@@ -257,7 +267,16 @@ article {
   color: black;
   padding: 3px;
   box-shadow: 3px 3px;
+}
 
+.wrappifyButton:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.githubLink:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .js{
@@ -317,4 +336,39 @@ article {
 .five{
     background-color: rgb(246, 238, 227);
     height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on mobile */
+  }
+
+  .title {
+    font-size: 8vw; /* Adjust font size for mobile */
+
+  }
+
+  .subheading {
+    font-size: 4vw; /* Adjust font size for mobile */
+  }
+  .location {
+    font-size: 3vw; /* Adjust font size for mobile */
+  }
+  .go{
+    display: none;
+  }
+  .novo{
+    display: none;
+  }
+
+  .github{
+    font-family: futura;
+    box-shadow: 3px 3px;
+    background-color: rgb(255, 131, 131);
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+  }
+  /* Add other necessary styles for mobile layout */
 }

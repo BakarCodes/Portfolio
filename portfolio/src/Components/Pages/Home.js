@@ -123,11 +123,11 @@ deploying a range of technologies and frameworks. Extensive experience in Agile 
                     RestAPI
                   </p>
                 </div>
-                <div className='links'>
-                <button className='github'>
-                    <a className="githubLink" href="https://github.com/BakarCodes/Wrappify" target="_blank" rel="noopener noreferrer">Github</a>
-                </button>
-                  <a className='wrappifyButton' href="https://www.wrappify.uk/" target="_blank" rel="noopener noreferrer">Check Wrappify</a>
+                <div className='buttons'>
+                  <button className='github'>
+                      <a className="githubLink" href="https://github.com/BakarCodes/Wrappify" target="_blank" rel="noopener noreferrer">Github</a>
+                  </button>
+                    <a className='wrappifyButton' href="https://www.wrappify.uk/" target="_blank" rel="noopener noreferrer">Check Wrappify</a>
                 </div>
             </div>
           </div>
@@ -156,11 +156,10 @@ deploying a range of technologies and frameworks. Extensive experience in Agile 
                     Gcloud
                   </p>
                 </div>
-                <div className='links'>
-                <button className='github'>
-                    <a className="githubLink" href="https://github.com/BakarCodes/novo-web-fyp" target="_blank" rel="noopener noreferrer">Github</a>
-                </button>
-               
+                <div className='buttons'>
+                  <button className='github'>
+                      <a className="githubLink" href="https://github.com/BakarCodes/novo-web-fyp" target="_blank" rel="noopener noreferrer">Github</a>
+                  </button>
                 </div>
               </div>
   
@@ -197,10 +196,10 @@ deploying a range of technologies and frameworks. Extensive experience in Agile 
                       RestAPI
                     </p>
                   </div>
-                  <div className='links'>
-                  <button className='github'>
-                      <a className="githubLink" href="https://github.com/BrunelCS/cs2001-2021_22-group13-2021" target="_blank" rel="noopener noreferrer">Github</a>
-                  </button>
+                  <div className='buttons'>
+                    <button className='github'>
+                        <a className="githubLink" href="https://github.com/BrunelCS/cs2001-2021_22-group13-2021" target="_blank" rel="noopener noreferrer">Github</a>
+                    </button>
                   </div>
               </div>
   
