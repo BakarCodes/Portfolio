@@ -23,7 +23,10 @@ function Home() {
               BAKAR
             </h1>
             <h2 className='subheading'>
-              SOFTWARE ENGINEER
+              SOFTWARE
+            </h2>            
+            <h2 className='subheading'>
+              ENGINEER
             </h2>
             <p className='location'>
               LONDON
